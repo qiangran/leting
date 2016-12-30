@@ -1,0 +1,45 @@
+<!-- 输入车牌缴费页 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>乐停</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="target-densitydpi=high-dpi,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="card center">
+    <div class="logo">
+        <img src="images/logo.png">
+        <p>乐停云停车</p>
+    </div>
+    <div class="action">
+        <input id="panel" type="text" placeholder="请输入您的车牌号">
+        <div class="arrow">
+            <img src="images/arrow-gray.png">
+        </div>
+    </div>
+    <div class="copyright">© leting360.cn</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+    $('#panel').bind('input propertychange', function() {
+        if($(this).val().length > 6){
+            $('.arrow').css('background-color','#f39939');
+            $('.arrow img').attr('src','images/arrow-black.png');
+            $('.arrow').click(function () {
+                console.log('此处响应点击事件,提交车牌');
+                // save();
+            });
+        }
+    });
+</script>
+</body>
+</html>

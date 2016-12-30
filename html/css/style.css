@@ -1,0 +1,170 @@
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,code,em,img,small,strong,
+center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,
+tbody,thead,tr,th,td,article,canvas,footer,header,menu,nav,output,section,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background-color: #F2F2F2;
+    font-family: SimSun,SimHei,'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+}
+body{
+    min-width: 320px;
+}
+.card {
+    margin: .5rem;
+    background-color: #fff;
+    border-radius: 5px;
+    border-bottom: 1px solid #eaeaea;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.center{
+    text-align: center;
+}
+
+.card .logo {
+    margin: 0 auto;
+    width: 33%;
+}
+
+.card .logo img {
+    width: 100%;
+    margin-top: 3.5rem;
+}
+
+.card .logo p {
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.card .action {
+    clear: both;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    vertical-align: middle;
+}
+
+.card .action input {
+    margin-left: 1.5%;
+    width: 71%;
+    height: 2.8rem;
+    color: #f39939;
+    font-size: 1rem;
+    text-align:center;
+    border: 1px solid #f39939;
+}
+
+.card .arrow {
+    float: right;
+    margin-right: 3%;
+    margin-top: .2rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    background-color: #eee;
+    vertical-align: middle;
+}
+
+.card .arrow img {
+    width: 50%;
+    vertical-align: middle;
+}
+
+.copyright {
+    margin: 2rem;
+    color: #999;
+    text-align: center;
+    font-size: 1rem;
+}
+
+input::-webkit-input-placeholder {
+    color: #999 !important;
+    font-size: 1rem;
+    text-align: center;
+}
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #999 !important;
+    font-size: 1rem;
+    text-align: center;
+}
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #999 !important;
+    font-size: 1rem;
+    text-align: center;
+}
+
+input:-ms-input-placeholder {
+    color: #999 !important;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/****************** order.html, orderList.html **********************/
+
+.order .panel{
+    padding: .5rem ;
+}
+.order .panel p{
+    padding: 1rem;
+    height: 100%;
+    line-height: 2rem;
+    color: #f39939;
+    font-size: 2rem;
+    border-bottom: 1px solid #dddddd;
+}
+.order .table{
+    width: 90%;
+    margin: .8rem 5% ;
+}
+.order .table td.left{
+    width: 26.5%;
+}
+
+.order .table td{
+    padding: .4rem .1rem;
+    font-size: 1.1rem;
+    color: #666666;
+}
+
+.btn{
+    margin: 1rem 5% ;
+    width: 90%;
+    height: 3.5rem;
+    background-color: #f39939;
+    color: #ffffff;
+    font-size: 2rem;
+    border: 0;
+    border-radius: 5px;
+}
+.margin{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#order_list{
+    margin-bottom: 6rem;
+}
+.btn_list{
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+}
+
+/***************** 暂无订单 ********************/
+#order_none .desc{
+    margin-top: 50%;
+    font-size: 1.3rem;
+    color: #999999;
+}
+#order_none .copyright{
+    margin-left: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
